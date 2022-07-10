@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import {Routes,Route}from "react-router-dom"
-import {Box} from '@mui/material'
+import {Box} from "@material-ui/core"
 import Home from './components/pages/Home'
 import ExerciseDetail from './components/pages/ExerciseDetail'
 import Footer from './components/Footer'
@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
-      <Box width="400px">
+      <Box width="400px" sx={ {width:{xl:'1448px'}}}>
           Navbar
           <Routes>
             <Route path="/" element={<Home/>}/>
