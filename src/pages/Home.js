@@ -11,8 +11,9 @@ const Home = () => {
     <Box>
  
   <Banner/>
+  <Search/>
  <Exercise/>
- <Search/>
+ 
    
     </Box>
   )
