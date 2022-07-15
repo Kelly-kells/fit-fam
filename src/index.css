@@ -2,3 +2,7 @@ body{
     background-color: #04080f;
     color: white;
 }
+Img{
+    width: 100%;
+    height: 50%;
+}
