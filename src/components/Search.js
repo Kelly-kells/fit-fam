@@ -1,16 +1,18 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Box, Stack, TextField, Typography, Button } from "@mui/material";
-import { height } from "@mui/system";
+
+import { exerciseOptions, fetchData } from "../Utilities/fetchData";
 
 const Search = () => {
-  const[ search, setSearch]=useState("")
-  const handleSearch=async()=>{
- If(search) {
-  const exerciseData= await fetchData();
- }
+  const [search, setSearch] = useState("");
+  const handleSearch = async () => {
+   if (search) {
+    const exerciseData= await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
 
-  }
+    console.log(exerciseData)
+    }
+  };
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography
@@ -31,7 +33,7 @@ const Search = () => {
               fontWeight: "700",
               textAlign: "center",
               border: "none",
-              lineHeight:"1.5"
+              lineHeight: "1.5",
             },
             width: { lg: "1000px", xs: "350px" },
           }}
@@ -42,17 +44,17 @@ const Search = () => {
           type="text"
         />
         <Button
-          className="serch-btn"
+          className="search-btn"
           sx={{
             bgcolor: "#f94144",
             height: "57px",
             textTransform: "none",
             color: "#fff",
             width: { lg: "175px", xs: "80px" },
-            
-            fontSize:{lg:"20px", xs: "14px"}
+
+            fontSize: { lg: "20px", xs: "14px" },
           }}
-          onClick= {handleSearch}
+          onClick={handleSearch}
         >
           Search
         </Button>
