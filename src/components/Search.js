@@ -15,7 +15,14 @@ const Search = () => {
         Exercises .
       </Typography>
       <Box position="relative" mb="72px">
-        <TextField />
+        <TextField className="textfield"
+       sx={{ input: { color: 'gray', fontWeight: "700", textAlign: "center", border: "none"} }}
+        height="76px"
+        value=""
+        onChange={(e) =>{}}
+        placeholder="Search Exercises"
+        type="text"
+        />
       </Box>
     </Stack>
   );
