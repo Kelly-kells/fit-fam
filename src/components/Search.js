@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Box, Stack, TextField, Typography, Button } from "@mui/material";
+import { height } from "@mui/system";
 
 const Search = () => {
   return (
@@ -15,14 +16,36 @@ const Search = () => {
         Exercises .
       </Typography>
       <Box position="relative" mb="72px">
-        <TextField className="textfield"
-       sx={{ input: { color: 'gray', fontWeight: "700", textAlign: "center", border: "none"} }}
-        height="76px"
-        value=""
-        onChange={(e) =>{}}
-        placeholder="Search Exercises"
-        type="text"
+        <TextField
+          className="textfield"
+          sx={{
+            input: {
+              color: "gray",
+              fontWeight: "700",
+              textAlign: "center",
+              border: "none",
+            },
+            width: { lg: "1000px", xs: "350px" },
+          }}
+          height="76px"
+          value=""
+          onChange={(e) => {}}
+          placeholder="Search Exercises"
+          type="text"
         />
+        <Button
+          className="serch-btn"
+          sx={{
+            bgcolor: "#f94144",
+            height: "50px",
+            textTransform: "none",
+            color: "#fff",
+            width: { lg: "175px", xs: "80px" },
+            borderRadius: "15px",
+          }}
+        >
+          Search
+        </Button>
       </Box>
     </Stack>
   );
