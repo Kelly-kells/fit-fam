@@ -10,7 +10,12 @@ const Search = () => {
    if (search) {
     const exerciseData= await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
 
-    console.log(exerciseData)
+    const searchExercises=exerciseData.filter(
+      (exercise)=> exercise.name.toLowerCase().includes(search)
+    ||exercise.target.toLowerCase().includes(search)
+    ||exercise.equipment.toLowerCase().includes(search)
+   || exercise.bodyparts.toLowerCase().includes(search)
+    )
     }
   };
   return (
