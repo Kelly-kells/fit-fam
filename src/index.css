@@ -19,24 +19,4 @@ Img{
     background-color: #ffebee;
     
   }
-  body{
-    background-color: #04080f;
-    color: white;
-}
-Img{
-    width: 50%;
-    height: 100%;
-}
-.bannerImg {
-    position: absolute;
-    right: 40px;
-    top: 0px;
-    width: 700px;
-    height: 900px;
-    margin-top: -330px;
   
-  }
-  .textfield{
-    background-color: #ffebee;
-    
-  }
