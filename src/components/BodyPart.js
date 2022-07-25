@@ -2,7 +2,7 @@ import React from "react";
 import { Stack, typography } from "@mui/material";
 import dumbellIcon from "../assets/dumbellIcon.png";
 
-const BodyPart = ({item,setBodypart,bodyPart}) => {
+const BodyPart = ({ item, setBodypart, bodyPart }) => {
   return (
     <Stack
       type="button"
@@ -10,16 +10,24 @@ const BodyPart = ({item,setBodypart,bodyPart}) => {
       justifyContent="center"
       className="boypart-card"
       sx={
-        bodyPart === item ?{
-        borderTop:"4px solid #ff2625",
-        backgroundColor:"#fff",
-        borderBottomLeftRadius:"20px",
-        width:'270px',
-        height:"280px",
-        cursor:"pointer",
-        gap: "47px"
-
-        } : ''
+        bodyPart === item
+          ? {
+              borderTop: "4px solid #ff2625",
+              backgroundColor: "#ffebee",
+              borderBottomLeftRadius: "20px",
+              width: "270px",
+              height: "200px",
+              cursor: "pointer",
+              gap: "47px",
+            }
+          : {
+              backgroundColor: "#ffebee",
+              borderBottomLeftRadius: "20px",
+              width: "270px",
+              height: "200px",
+              cursor: "pointer",
+              gap: "47px",
+            }
       }
     >
       <img
