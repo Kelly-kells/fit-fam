@@ -1,5 +1,6 @@
 import React from "react";
 import { Stack, typography } from "@mui/material";
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu"
 import dumbellIcon from "../assets/dumbellIcon.png";
 
 const BodyPart = ({ item, setBodypart, bodyPart }) => {
