@@ -1,7 +1,8 @@
 import React from "react";
-import { Stack, typography } from "@mui/material";
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu"
+import { Stack, Typography } from "@mui/material";
+
 import dumbellIcon from "../assets/dumbellIcon.png";
+
 
 const BodyPart = ({ item, setBodypart, bodyPart }) => {
   return (
@@ -16,13 +17,13 @@ const BodyPart = ({ item, setBodypart, bodyPart }) => {
               borderTop: "4px solid #ff2625",
               backgroundColor: "#ffebee",
               borderBottomLeftRadius: "20px",
-              width: "270px",
+              width: "200px",
               height: "200px",
               cursor: "pointer",
               gap: "47px",
             }
           : {
-              backgroundColor: "#ffebee",
+              
               borderBottomLeftRadius: "20px",
               width: "270px",
               height: "200px",
@@ -34,9 +35,11 @@ const BodyPart = ({ item, setBodypart, bodyPart }) => {
       <img
         src={dumbellIcon}
         alt="dumbell"
-        style={{ width: "100px", height: "100px" }}
+        style={{ width: "100px", height: "100px",backgroundColor: "#ffebee" }}
         className="bodypartImg"
       />
+
+      <Typography fontSize="24px" fontWeight="bold" color="#ffebee" textTransform="capitalize">{item}</Typography>
     </Stack>
   );
 };
