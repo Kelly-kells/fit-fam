@@ -1,19 +1,19 @@
-import React from 'react'
+
+import back from "../assets/back.png"
+
 
 const ImageData = [
  {
-    id: 1,
-    img: require("./asset/back.png"),
+    
+    img: back 
     
  },
- {
-    id: 2,
-    img: require("./asset/dumbellIcon.png"),
-    
- }
+ 
+ 
 
 ]
   
+
 
 
 export default ImageData

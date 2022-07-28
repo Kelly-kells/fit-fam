@@ -1,10 +1,8 @@
 import React from "react";
 import { Stack, Typography } from "@mui/material";
+import ImageData from "./ImageData";
 
-import dumbellIcon from "../assets/dumbellIcon.png";
-
-
-const BodyPart = ({ item, setBodypart, bodyPart }) => {
+const BodyPart = ({ item, setBodyPart, bodyPart }) => {
   return (
     <Stack
       type="button"
@@ -23,23 +21,43 @@ const BodyPart = ({ item, setBodypart, bodyPart }) => {
               gap: "47px",
             }
           : {
-              
               borderBottomLeftRadius: "20px",
               width: "270px",
               height: "200px",
               cursor: "pointer",
               gap: "47px",
             }
-      }
-    >
-      <img
-        src={dumbellIcon}
-        alt="dumbell"
-        style={{ width: "100px", height: "100px",backgroundColor: "#ffebee" }}
-        className="bodypartImg"
-      />
 
-      <Typography fontSize="24px" fontWeight="bold" color="#ffebee" textTransform="capitalize">{item}</Typography>
+            
+      }
+      onClick={() => {
+        setBodyPart(item);
+        window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
+      }}
+    >
+
+
+      {ImageData.map(({ img }) => (
+        <img
+          src={img}
+          alt=""
+          style={{
+            width: "100px",
+            height: "100px",
+            backgroundColor: "#ffebee",
+          }}
+          className="bodypartImg"
+        />
+      ))}
+
+      <Typography
+        fontSize="24px"
+        fontWeight="bold"
+        color="#ffebee"
+        textTransform="capitalize"
+      >
+        {item}
+      </Typography>
     </Stack>
   );
 };
