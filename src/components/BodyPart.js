@@ -15,19 +15,12 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
               borderTop: "4px solid #ff2625",
               backgroundColor: "#ffebee",
               borderBottomLeftRadius: "20px",
-              width: "200px",
-              height: "200px",
+              width: "180px",
+              height: "180px",
               cursor: "pointer",
               gap: "47px",
             }
-          : {
-              borderBottomLeftRadius: "20px",
-              width: "270px",
-              height: "200px",
-              cursor: "pointer",
-              gap: "47px",
-            }
-
+          : ""
             
       }
       onClick={() => {
