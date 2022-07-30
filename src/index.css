@@ -20,4 +20,44 @@ Img{
     
   }
   
+  .bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+
+  @media screen and (max-width:1200px) {
+    .detail-image {
+      width: 300px;
+      height: 300px;
+    }
   
+  
+    .react-horizontal-scrolling-menu--scroll-container {
+      width: 500px;
+    }
+  
+    .left-arrow,
+    .right-arrow {
+      position: static !important;
+    }
+  
+    .bannerImg {
+      display: none;
+    }
+  
+    .exercise-card {
+      width: 320px;
+    }
+  
+    .exercise-video {
+      width: 320px;
+      height: 300px;
+    }
+  
+  }
+  
+  @media screen and (max-width:400px) {
+    .exercise-card {
+      width: 280px;
+    }
+  }
