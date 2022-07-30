@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Typography } from "@mui/material";
-import ImageData from "./ImageData";
+import back from "../assets/back.png"
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => {
   return (
@@ -37,18 +37,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
     >
 
 
-      {ImageData.map(({ img }) => (
-        <img
-          src={img}
-          alt=""
-          style={{
-            width: "100px",
-            height: "100px",
-            backgroundColor: "#ffebee",
-          }}
-          className="bodypartImg"
-        />
-      ))}
+<img src={back} alt="dumbbell" style={{ width: '50%', height: '100%' }} />
 
       <Typography
         fontSize="24px"
