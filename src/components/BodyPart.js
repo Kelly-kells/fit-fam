@@ -10,18 +10,17 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       justifyContent="center"
       className="bodyPart-card"
       sx={
-        bodyPart === item
-          ? {
-              borderTop: "4px solid #ff2625",
-              backgroundColor: "#ffebee",
+         {
+              borderTop:  bodyPart === item ? "7px solid #ff2625" 
+              : "",
+             
               borderBottomLeftRadius: "20px",
               width: "180px",
               height: "180px",
               cursor: "pointer",
               gap: "47px",
             }
-          : ""
-            
+          
       }
       onClick={() => {
         setBodyPart(item);
