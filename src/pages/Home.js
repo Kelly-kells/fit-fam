@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { Box } from "@mui/material";
 import Banner from "../components/Banner";
-import Exercise from "../components/Exercise";
+import Exercises from "../components/Exercises";
 import Search from "../components/Search";
 
 const Home = () => {
-  const [bodyPart, setBodypart] = useState("all");
+  const [bodyPart, setBodyPart] = useState("all");
   const [exercises, setExercises] = useState([]);
   return (
     <Box>
@@ -14,13 +14,13 @@ const Home = () => {
       <Search
         setExercises={setExercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodypart}
+        setBodyPart={setBodyPart}
       />
-      <Exercise 
+      <Exercises 
       exercises={exercises}
       setExercises={setExercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodypart}/>
+        setBodyPart={setBodyPart}/>
     </Box>
   );
 };
