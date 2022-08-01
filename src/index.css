@@ -45,7 +45,8 @@ Img {
 
 .exercise-card {
   width: 400px;
-  height: 445px;
+  height: 300px;
+  margin-top: 1rem;
   border-top: 4px solid #ff2625;
   border-bottom-left-radius: 20px;
   text-decoration: none;
@@ -58,7 +59,7 @@ Img {
 }
 
 .exercise-card img {
-  height: 326px;
+width: 100%;
 }
 
 .exercise-card:hover,
