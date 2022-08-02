@@ -15,6 +15,18 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     window.scrollTo({ top: "1800", behavior: "smooth" });
   };
 
+  useEffect(() => {
+    const fetchExercisesData = async () => {
+      let exercisesData = [];
+      if (bodyPart === "") {
+      }
+      exercisesData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises",
+        exerciseOptions
+      )
+    };
+  }, [bodyPart]);
+
   const indexOfLastExercise = currentPage * exercisePerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisePerPage;
   const currentExercises = exercises.slice(
