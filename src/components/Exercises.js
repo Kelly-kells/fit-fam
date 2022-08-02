@@ -12,8 +12,16 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const paginate = (e, value) => {
     setCurrentPage(value);
 
-    window.scrollTo({ top: "1800px", behavior: "smooth" });
+    window.scrollTo({ top: "1800", behavior: "smooth" });
   };
+
+  const indexOfLastExercise = currentPage * exercisePerPage;
+  const indexOfFirstExercise = indexOfLastExercise - exercisePerPage;
+  const currentExercises = exercises.slice(
+    indexOfFirstExercise,
+    indexOfLastExercise
+  );
+
   return (
     <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
       <Typography varient="h4" mb="46px">
@@ -25,7 +33,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
-        {exercises.map((exercise, index) => (
+        {currentExercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />
         ))}
 

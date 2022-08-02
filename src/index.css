@@ -44,9 +44,9 @@ Img {
 }
 
 .exercise-card {
-  width: 400px;
+  width: 300px;
   height: 300px;
-  margin-top: 1rem;
+  margin-top: 3rem;
   border-top: 4px solid #ff2625;
   border-bottom-left-radius: 20px;
   text-decoration: none;
