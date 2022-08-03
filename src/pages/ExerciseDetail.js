@@ -1,4 +1,7 @@
-import React from 'react'
+import React,{useEffect, UseState} from 'react'
+import {useParam} from "react-router-dom"
+import {Box} from "@mui/material"
+import {exerciseOptions, fetchData} from "../utilities/fetchData"
 
 const ExerciseDetail = () => {
   return (
@@ -6,4 +9,4 @@ const ExerciseDetail = () => {
   )
 }
 
-export default ExerciseDetail
+export default ExerciseDetail;
