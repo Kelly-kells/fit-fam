@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParam, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import { exerciseOptions, fetchData } from "../Utilities/fetchData";
 import Details from "../components/Details";
@@ -22,7 +22,13 @@ const ExerciseDetail = () => {
         exerciseOptions
       );
       setExerciseDetail(exerciseDetailData);
+
+      const exerciseVideosData = await fetchData(
+        `${youtubeSearchUrl}/search?query=${exerciseDetailData.name}`,
+        exerciseOptions
+      );
     };
+    fetchExercisesData();
   }, [id]);
 
   return (
