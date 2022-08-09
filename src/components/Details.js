@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Stack, Button } from '@mui/material';
-import ExerciseDetail from '../pages/ExerciseDetail';
+
 
 import BodyPartImage from "../assets/abdominal.png"
 import TargetImage from "../assets/yoga.png"
