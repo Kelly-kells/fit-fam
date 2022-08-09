@@ -7,7 +7,7 @@ import {
   youtubeOptions,
 } from "../Utilities/fetchData";
 import Details from "../components/Details";
-import ExerciseVideo from "../components/ExerciseVideo";
+import ExerciseVideos from "../components/ExerciseVideos";
 import SimillarExercises from "../components/SimillarExercises";
 
 const ExerciseDetail = () => {
@@ -41,7 +41,7 @@ const ExerciseDetail = () => {
   return (
     <div>
       <Details exerciseDetail={exerciseDetail} />
-      <ExerciseVideo
+      <ExerciseVideos
         exerciseVideos={exerciseVideos}
         name={exerciseDetail.name}
       />
