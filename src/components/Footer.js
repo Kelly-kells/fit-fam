@@ -3,51 +3,36 @@ import { Box, Stack, Typography } from "@mui/material";
 
 const Footer = () => (
   <Stack
-    bgcolor="#00111c"
-    direction={{ sm: "row" }}
-    spacing={{ xs: 2 }}
-    gap="40px"
-   alignItems="center"
-    flexWrap="wrap"
-    px="40px"
-    pt="24px"
+    className="footer"
+    bgcolor="#001523"
+    direction={{ sm: "row", xs: "column" }}
+    spacing={2}
     mt="150px"
+    justifyContent="space-around"
+    alignItems="center"
+    color="#fdf0d5"
   >
-    <Box>
-      <Typography
-        variant="h6"
-        sx={{ fontSize: { lg: "20px", xs: "20px" } }}
-        mt="20px"
-        pb="20px"
-        ml="20px"
-      >
-        ABOUT
+    <Box xs={4} justifyContent="center" p="10px">
+      <Typography variant="h6" fontSize="1rem" p="">
+        About
       </Typography>
-
-      <Typography variant="p" pb="10px">
-        We are efficient, and give a robust training effect for body and soul.
-        <br /> The endurance activities are described as walking or running,
+      <Typography variant="p" fontSize="0.9rem">
+        Being physically active can benefit your physical
         <br />
-        but feel free to swim, cycle, row or perform any other activity
-        <br /> that involves dynamic work with large muscle groups
+        It can strengthen your muscles and bones, lower
+        <br /> your risk of chronic health conditions.
       </Typography>
     </Box>
 
-    <Box ml="100px">
-      <Typography
-        variant="h6"
-        sx={{ fontSize: { lg: "20px", xs: "20px" } }}
-        mt="20px"
-        pb="40px"
-        
-      >
-        CATEGORIES
+    <Box xs={4}>
+      <Typography variant="h6" fontSize="1rem">
+        Categories
       </Typography>
-      <Typography variant="p" pb="10px" >
-        Strength
+      <Typography variant="p" fontSize="0.9rem">
+        Strength Training. <br />
+        Aerobic Training.
         <br />
-        Endurance
-        <br /> Balance <br /> Flexibility
+        Balance and Stability Training. <br />
       </Typography>
     </Box>
   </Stack>
