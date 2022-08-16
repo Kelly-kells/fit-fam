@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box,  Typography } from "@mui/material";
 import { Button } from "@mui/material";
 import BannerImage from "../assets/BannerImage.png";
 
@@ -33,7 +33,7 @@ const Banner = () => {
       Exercise
     </Typography>
 
-      <img src={BannerImage} alt="Banner" className="bannerImg" />
+    <img src={BannerImage} alt="Banner" className="bannerImg" />
     </Box>
   );
 };

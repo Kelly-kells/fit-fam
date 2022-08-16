@@ -20,8 +20,8 @@ Img {
   position: absolute;
   right: 40px;
   top: 0px;
-  width: 700px;
-  height: 900px;
+  width:600px;
+ height: 700px;
   margin-top: -330px;
 }
 .textfield {
@@ -30,13 +30,10 @@ Img {
 
 .bodyPart-card {
   transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  transition: 0.1s all ease-in-out;
 }
 
-.exercise-card:hover,
-.bodyPart-card:hover {
-  transform: scale(1.1, 1.1);
-}
+
 
 .search-btn:hover {
   color: #ff2625 !important;
@@ -68,10 +65,7 @@ Img {
 width: 100%;
 }
 
-.exercise-card:hover,
-.bodyPart-card:hover {
-  transform: scale(1.1, 1.1);
-}
+
 .search-btn:hover {
   color: #FF2625 !important;
   border: 1px solid #FF2625 !important;
@@ -90,10 +84,14 @@ width: 100%;
 .footer{
   width: 100%;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 950px) {
   .detail-image {
     width: 300px;
     height: 300px;
+  }
+
+  .bannerImg{
+    display: none;
   }
 
   .react-horizontal-scrolling-menu--scroll-container {
@@ -105,9 +103,7 @@ width: 100%;
     position: static !important;
   }
 
-  .bannerImg {
-    display: none;
-  }
+  
 
   .exercise-card {
     width: 320px;
@@ -123,4 +119,6 @@ width: 100%;
   .exercise-card {
     width: 280px;
   }
+
+  
 }
